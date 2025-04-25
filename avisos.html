@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <title>avisos.html - Mi Cursada</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="styles/style.css" type="text/css">
+    </head>
+    <body>
+        <div class="wrapper"> <!-- Envuelvo las etiquetas en estas 2 clases para lograr el footer sticky -->
+            <div class="content">
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark"> <!-- Codigo de la NAVBAR (Bootstrap) -->
+                    <div class="container">
+                        <a class="navbar-brand" href="index.html">Mi Cursada</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav ms-auto">
+                                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                                <li class="nav-item"><a class="nav-link" href="avisos.html">Avisos</a></li>
+                                <li class="nav-item"><a class="nav-link" href="sobremi.html">Sobre mí</a></li>
+                                <li class="nav-item"><a class="nav-link" href="materias2025.html">Materias 2025</a></li>
+                                <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+
+                <main class="container my-5"> <!-- Container para la lista de tareas -->
+                    <h2 class="mb-4">Tareas y Recordatorios</h2>
+                    <ul>
+                        <li>
+                            <strong>ARQUITECTURA DE APLICACIONES</strong>
+                            <span>📍 9/14</span>
+                            <ul>
+                                <li><input type="checkbox" /> Exposicion TPI <span>💡 12 May</span></li>
+                                <li><input type="checkbox" /> Labs 2 <span>💡 23 Jun</span></li>
+                                <li><input type="checkbox" /> TPO <span>💡 23 Jun</span></li>
+                                <li><input type="checkbox" /> Parcial <span>💡 30 Jun</span></li>
+                                <li><input type="checkbox" /> Terminar TPI</li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <strong>SEGURIDAD E INTEGRIDAD DE LA INFORMACION</strong>
+                            <span>📍 3/7</span>
+                            <ul>
+                                <li><input type="checkbox" /> Continuar resumen...</li>
+                                <li><input type="checkbox" /> Parcial 1 <span>💡 miércoles</span></li>
+                                <li><input type="checkbox" /> TP Inicio <span>💡 11 Jun</span></li>
+                                <li><input type="checkbox" /> Parcial 2 <span>💡 25 Jun</span></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <strong>APLICACIONES INTERACTIVAS</strong>
+                            <span>📍 8/10</span>
+                            <ul>
+                                <li><input type="checkbox" /> Entrega TP Front <span>💡 2 May</span></li>
+                                <li><input type="checkbox" /> Entrega TP Back <span>💡 4 Jul</span></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <strong>DISEÑO Y DESARROLLO WEB</strong>
+                            <span>📍 10/13</span>
+                            <ul>
+                                <li><input type="checkbox" /> Parcial 1 <span>💡 martes</span></li>
+                                <li><input type="checkbox" /> Parcial 2 <span>💡 24 Jun</span></li>
+                                <li><input type="checkbox" /> Realizar Parcial rapido para tener devolución</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </main>
+            </div>
+
+            <footer class="bg-dark text-white text-center py-3"> <!-- Footer -->
+                <p class="mb-0">&copy; 2025 Iván Conde - Sitio Personal</p>
+            </footer>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

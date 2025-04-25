@@ -1,0 +1,18 @@
+/* Hace que el body y html ocupen toda la altura de la pantalla */
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+/* Wrapper principal para usar flexbox en vertical y empujar el footer al fondo */
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Contenido que crece para ocupar el espacio entre el header y el footer */
+.content {
+    flex: 1;
+}

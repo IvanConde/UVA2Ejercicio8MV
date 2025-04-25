@@ -1,0 +1,27 @@
+/* Tamaño y estilo de títulos dentro de cajas */
+h5 {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/* Hace que las columnas con cajas usen altura completa del viewport en pantallas grandes */
+@media (min-height: 700px) {
+    .row.g-3 {
+        min-height: calc(100vh - 340px); /* ajustado para evitar pisar el footer */
+    }
+}
+
+/* Acomoda el diseño vertical de cada columna */
+.col-md-4,
+.col-md-8 {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    gap: 1rem;
+}
+
+/* Hace que cada caja dentro de las columnas crezca proporcionalmente */
+.col-md-4 > .bg-secondary,
+.col-md-8 > .bg-secondary {
+    flex: 1;
+}
