@@ -10,17 +10,17 @@ document.addEventListener('DOMContentLoaded', () => {
     const email = document.getElementById('email').value.trim();
     const mensaje = document.getElementById('mensaje').value.trim();
 
-    // Validación básica
-    if (nombre === '' || email === '' || mensaje === '') {
-      resultado.textContent = 'Por favor, complete todos los campos.';
+	// Validación de email simple
+    const regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!regexEmail.test(email)) {
+      resultado.textContent = 'Ingrese un email válido.';
       resultado.style.color = 'red';
       return;
     }
 
-    // Validación de email simple
-    const regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!regexEmail.test(email)) {
-      resultado.textContent = 'Ingrese un email válido.';
+    // Validación básica
+    if (nombre === '' || email === '' || mensaje === '') {
+      resultado.textContent = 'Por favor, complete todos los campos.';
       resultado.style.color = 'red';
       return;
     }
