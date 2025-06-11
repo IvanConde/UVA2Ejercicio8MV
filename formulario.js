@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const nombre = document.getElementById('nombre').value.trim();
     const email = document.getElementById('email').value.trim();
     const mensaje = document.getElementById('mensaje').value.trim();
+	const asunto = document.getElementById('asunto').value.trim();
 
 	// Validación de email simple
     const regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -19,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Validación básica
-    if (nombre === '' || email === '' || mensaje === '') {
+    if (nombre === '' || email === '' || mensaje === '' || asunto === '') {
       resultado.textContent = 'Por favor, complete todos los campos.';
       resultado.style.color = 'red';
       return;
