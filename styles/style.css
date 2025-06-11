@@ -1,3 +1,15 @@
+/* Evitar FOUC */
+body:not(.light-mode):not(.dark-mode) {
+    opacity: 0;
+    visibility: hidden;
+}
+
+body.light-mode, body.dark-mode {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
 /* Hace que el body y html ocupen toda la altura de la pantalla */
 html,
 body {
@@ -15,4 +27,59 @@ body {
 /* Contenido que crece para ocupar el espacio entre el header y el footer */
 .content {
     flex: 1;
+}
+
+/* Cambia el borde cuando el campo está enfocado */
+.input-form:focus {
+  border-color: #007BFF;
+  outline: none;
+}
+
+.resultado {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+/* Modo Oscuro */
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.dark-mode .bg-secondary {
+    background-color: #1e1e1e !important;
+}
+
+.dark-mode .table {
+    color: #ffffff;
+}
+
+.dark-mode .table-dark {
+    background-color: #1a1a1a;
+}
+
+.dark-mode .table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* Modo Claro */
+body.light-mode {
+    background-color: #f8f9fa;
+    color: #212529;
+}
+
+.light-mode .bg-secondary {
+    background-color: #e9ecef !important;
+}
+
+.light-mode .navbar-dark {
+    background-color: #343a40 !important;
+}
+
+.light-mode .table-dark {
+    background-color: #495057;
+}
+
+.light-mode .bg-dark {
+    background-color: #343a40 !important;
 }
